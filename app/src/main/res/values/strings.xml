@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Reimbursement Claims</string>
+    <string-array name="Category">
+        <item>Grooming</item>
+        <item>Bills-Utilities</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Food</item>
+        <item>Fuel</item>
+        <item>Health</item>
+        <item>Investment</item>
+        <item>Services</item>
+        <item>Shopping</item>
+        <item>Groceries</item>
+        <item>EMI</item>
+        <item>Transfer</item>
+        <item>Travel</item>
+        <item>others</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bc42f5"
+        app:logo="@drawable/ic_arrow_back_black_24dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Reimbursement"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/scroll"
+        android:layout_gravity="center"
+        android:layout_marginTop="70sp"/>
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select an option to continue"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <Button
+        android:id="@+id/addmanually"
+        android:layout_marginTop="30sp"
+        android:layout_width="280sp"
+        android:layout_height="50sp"
+        android:text="Add Reimbursements Manually"
+        android:background="#bc42f5"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:clickable="true"/>
+</LinearLayout>
