@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder>{
     private MyList[] listdata;
 
@@ -24,46 +23,37 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem= layoutInflater.inflate(R.layout.list_recycler, parent, false);
+        View listItem= layoutInflater.inflate(R.layout.list, parent, false);
         ViewHolder viewHolder = new ViewHolder(listItem);
         return viewHolder;
     }
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         final MyList myListData = listdata[position];
-        holder.nameView.setText(listdata[position].getName());
-        holder.imagelicView.setImageResource(listdata[position].getImagelic());;
-        holder.paymentView.setText(listdata[position].getPayment());
-        holder.weeklyView.setText(listdata[position].getWeekly());
-        holder.moneyView.setText(listdata[position].getMoney());
-
+        holder.cashView.setImageResource(listdata[position].getCash());;
+        holder.claim1View.setText(listdata[position].getClaim1());
+        holder.november17View.setText(listdata[position].getNovember17());
+        holder.money1View.setText(listdata[position].getMoney1());
     }
-
     @Override
     public int getItemCount() {
         return listdata.length;
     }
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView imagelicView;
-        public TextView nameView;
-        public TextView paymentView;
-        public TextView weeklyView;
-        public TextView moneyView;
+        public ImageView cashView;
+        public TextView claim1View;
+        public TextView november17View;
+        public TextView money1View;
 
         public LinearLayout linearLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.imagelicView = (ImageView) itemView.findViewById(R.id.imagelic);
-            this.nameView = (TextView) itemView.findViewById(R.id.name);
-            this.paymentView = (TextView) itemView.findViewById(R.id.payment);
-            this.weeklyView = (TextView) itemView.findViewById(R.id.weekly);
-            this.moneyView = (TextView) itemView.findViewById(R.id.money);
+            this.cashView = (ImageView) itemView.findViewById(R.id.cash);
+            this.claim1View = (TextView) itemView.findViewById(R.id.claim1);
+            this.november17View = (TextView) itemView.findViewById(R.id.november17);
+            this.money1View = (TextView) itemView.findViewById(R.id.money1);
         }
-
     }
-
 }

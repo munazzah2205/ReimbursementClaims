@@ -19,7 +19,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:scrollbars="vertical">
-
     </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_marginTop="400sp"
+        android:layout_marginRight="10sp">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
 
 </LinearLayout>

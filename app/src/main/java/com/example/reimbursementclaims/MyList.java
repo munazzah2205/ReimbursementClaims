@@ -2,113 +2,48 @@ package com.example.reimbursementclaims;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MyList {
-    private String name;
-    private int imagelic;
-    private String payment;
-    private String weekly;
-    private String money;
+    private int cash;
+    private String claim1;
+    private String november17;
+    private String money1;
 
-    public MyList(String name, int imagelic, String payment, String weekly, String money) {
-        this.name = name;
-        this.imagelic = imagelic;
-        this.payment = payment;
-        this.weekly = weekly;
-        this.money = money;
+
+    public MyList(int cash,String claim1, String november17,String money1) {
+        this.cash = cash;
+        this.claim1 = claim1;
+        this.november17 = november17;
+        this.money1 = money1;
+    }
+    public int getCash() {
+        return cash;
     }
 
-    public String getName() {
-        return name;
+    public void setCash(int cash) {
+        this.cash = cash;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getClaim1()
+    {
+        return claim1;
     }
 
-    public int getImagelic() {
-        return imagelic;
+    public void setClaim1(String claim1) {
+        this.claim1 = claim1;
     }
 
-    public void setImagelic(int imagelic) {
-        this.imagelic = imagelic;
+    public String getNovember17() {
+        return november17;
     }
 
-    public String getPayment() {
-        return payment;
+    public void setNovember17(String november17) {
+        this.november17 = november17;
     }
 
-    public void setPayment(String payment) {
-        this.payment = payment;
+    public String getMoney1() {
+        return money1;
     }
 
-    public String getWeekly() {
-        return weekly;
-    }
-
-    public void setWeekly(String weekly) {
-        this.weekly = weekly;
-    }
-
-    public String getMoney() {
-        return money;
-    }
-
-    public void setMoney(String money) {
-        this.money = money;
-    }
-
-    public class MyList22 {
-        private String name;
-        private int imagelic;
-        private String payment;
-        private String weekly;
-        private String money;
-
-        public MyList22(String name, int imagelic, String payment, String weekly, String money) {
-            this.name = name;
-            this.imagelic = imagelic;
-            this.payment = payment;
-            this.weekly = weekly;
-            this.money = money;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public int getImagelic() {
-            return imagelic;
-        }
-
-        public void setImagelic(int imagelic) {
-            this.imagelic = imagelic;
-        }
-
-        public String getPayment() {
-            return payment;
-        }
-
-        public void setPayment(String payment) {
-            this.payment = payment;
-        }
-
-        public String getWeekly() {
-            return weekly;
-        }
-
-        public void setWeekly(String weekly) {
-            this.weekly = weekly;
-        }
-
-        public String getMoney() {
-            return money;
-        }
-
-        public void setMoney(String money) {
-            this.money = money;
-        }
+    public void setMoney1(String money) {
+        this.money1 = money1;
     }
 }
